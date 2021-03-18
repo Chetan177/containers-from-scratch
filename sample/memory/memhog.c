@@ -13,7 +13,7 @@
 #define MB (1024 * KB)
 #define GB (1024 * MB)
 
-#define LIMIT (5.0 * MB)
+#define LIMIT (9.0 * MB)
 
 int main(int argc, char *argv[])
 {

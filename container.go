@@ -74,6 +74,7 @@ func cg() {
 		case "memory":
 			//10MB
 			must(ioutil.WriteFile(filepath.Join(nspath, "memory.limit_in_bytes"), []byte("10000000"), 0700))
+			must(ioutil.WriteFile(filepath.Join(nspath, "memory.memsw.limit_in_bytes"), []byte("10000000"), 0700))
 		}
 
 		// Removes the new cgroup in place after the container exits
