@@ -1,3 +1,9 @@
+/*
+ * Credit:
+ *  https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/6/html/resource_management_guide/sec-memory
+ *  Original source code provided by Red Hat Engineer František Hrbata.
+ */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
