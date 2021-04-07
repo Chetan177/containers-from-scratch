@@ -12,10 +12,20 @@ Below is a simplified view of the same but also shows the interface between the 
 
 ![Simplified k8ss cluster with nodes](
 images/Kube-cluster-simplified.png?raw=true
-"Simplified k8ss cluster with nodes")0
+"Simplified k8ss cluster with nodes")
 
 
 Container runtimes integrate with `kubelet` by implementing the [CRI](https://github.com/kubernetes/community/blob/master/contributors/devel/sig-node/container-runtime-interface.md).
+
+![CRI overview](
+images/CRI.png?raw=true
+"CRI overview")
+
+CRI makes Kubernetes container agnostic. A container runtime can implement the interface (usually as a plugin) & integrate with `kubelet`. One such runtime is [containerd](https://containerd.io/).
+
+![CRI-containerd](
+images/cri-containerd.png?raw=true
+"CRI-containerd")
 
 ### Container runtimes
 
